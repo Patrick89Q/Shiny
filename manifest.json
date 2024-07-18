@@ -1,688 +1,642 @@
 {
   "version": 1,
   "locale": "en_US",
-  "platform": "4.4.1",
+  "platform": "4.3.3",
   "metadata": {
-    "appmode": "shiny",
+    "appmode": "static",
     "primary_rmd": null,
-    "primary_html": null,
+    "primary_html": "docs/edit/index.html",
     "content_category": null,
     "has_parameters": false
   },
-  "packages": {
-    "BH": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "BH",
-        "Type": "Package",
-        "Title": "Boost C++ Header Files",
-        "Version": "1.66.0-1",
-        "Date": "2018-02-12",
-        "Author": "Dirk Eddelbuettel, John W. Emerson and Michael J. Kane",
-        "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
-        "Description": "Boost provides free peer-reviewed portable C++ source \n libraries.  A large part of Boost is provided as C++ template code\n which is resolved entirely at compile-time without linking.  This \n package aims to provide the most useful subset of Boost libraries \n for template use among CRAN package. By placing these libraries in \n this package, we offer a more efficient distribution system for CRAN \n as replication of this code in the sources of other packages is \n avoided. As of release 1.65.0-1, the following Boost libraries are\n included: 'algorithm' 'align' 'any' 'atomic' 'bimap' 'bind'\n 'circular_buffer' 'compute' 'concept' 'config' 'container' 'date'_'time'\n 'detail' 'dynamic_bitset' 'exception' 'filesystem' 'flyweight' 'foreach'\n 'functional' 'fusion' 'geometry' 'graph' 'heap' 'icl' 'integer'\n 'interprocess' 'intrusive' 'io' 'iostreams' 'iterator' 'math' 'move' 'mpl'\n 'multiprcecision' 'numeric' 'pending' 'phoenix' 'preprocessor'\n 'propery_tree' 'random' 'range' 'scope_exit' 'smart_ptr' 'sort' 'spirit'\n 'tuple' 'type_traits' 'typeof' 'unordered' 'utility' 'uuid'.",
-        "License": "BSL-1.0",
-        "BugReports": "https://github.com/eddelbuettel/bh/issues",
-        "NeedsCompilation": "no",
-        "Packaged": "2018-02-12 19:11:19.852233 UTC; deddelbuettel",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-02-13 23:48:11 UTC",
-        "Built": "R 3.5.0; ; 2018-04-23 04:04:27 UTC; unix"
-      }
-    },
-    "NLP": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "NLP",
-        "Version": "0.2-0",
-        "Title": "Natural Language Processing Infrastructure",
-        "Authors@R": "person(\"Kurt\", \"Hornik\", role = c(\"aut\", \"cre\"),\n                  email = \"Kurt.Hornik@R-project.org\",\n\t\t  comment = c(ORCID = \"0000-0003-4198-9911\"))",
-        "Description": "Basic classes and methods for Natural Language Processing.",
-        "License": "GPL-3",
-        "Imports": "utils",
-        "Depends": "R (>= 3.2.0)",
-        "Enhances": "udpipe, spacyr, cleanNLP",
-        "NeedsCompilation": "no",
-        "Packaged": "2018-10-18 15:27:32 UTC; hornik",
-        "Author": "Kurt Hornik [aut, cre] (<https://orcid.org/0000-0003-4198-9911>)",
-        "Maintainer": "Kurt Hornik <Kurt.Hornik@R-project.org>",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-10-18 15:58:05 UTC",
-        "Built": "R 3.5.0; ; 2018-10-19 12:03:06 UTC; unix"
-      }
-    },
-    "R6": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "R6",
-        "Title": "Classes with Reference Semantics",
-        "Version": "2.2.2",
-        "Authors@R": "person(\"Winston\", \"Chang\", role = c(\"aut\", \"cre\"), email = \"winston@stdout.org\")",
-        "Description": "The R6 package allows the creation of classes with reference\n    semantics, similar to R's built-in reference classes. Compared to reference\n    classes, R6 classes are simpler and lighter-weight, and they are not built\n    on S4 classes so they do not require the methods package. These classes\n    allow public and private members, and they support inheritance, even when\n    the classes are defined in different packages.",
-        "Depends": "R (>= 3.0)",
-        "Suggests": "knitr, microbenchmark, pryr, testthat, ggplot2, scales",
-        "License": "MIT + file LICENSE",
-        "URL": "https://github.com/wch/R6/",
-        "LazyData": "true",
-        "VignetteBuilder": "knitr",
-        "RoxygenNote": "6.0.1",
-        "NeedsCompilation": "no",
-        "Packaged": "2017-06-12 18:48:43 UTC; winston",
-        "Author": "Winston Chang [aut, cre]",
-        "Maintainer": "Winston Chang <winston@stdout.org>",
-        "Repository": "CRAN",
-        "Date/Publication": "2017-06-17 08:22:59 UTC",
-        "Built": "R 3.5.0; ; 2018-04-23 04:02:45 UTC; unix"
-      }
-    },
-    "RColorBrewer": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "RColorBrewer",
-        "Version": "1.1-2",
-        "Date": "2014-12-07",
-        "Title": "ColorBrewer Palettes",
-        "Authors@R": "c(person(given = \"Erich\", family = \"Neuwirth\", role = c(\"aut\",\n        \"cre\"), email = \"erich.neuwirth@univie.ac.at\"))",
-        "Author": "Erich Neuwirth [aut, cre]",
-        "Maintainer": "Erich Neuwirth <erich.neuwirth@univie.ac.at>",
-        "Depends": "R (>= 2.0.0)",
-        "Description": "Provides color schemes for maps (and other graphics)\n        designed by Cynthia Brewer as described at http://colorbrewer2.org",
-        "License": "Apache License 2.0",
-        "Packaged": "2014-12-06 23:59:42 UTC; neuwirth",
-        "NeedsCompilation": "no",
-        "Repository": "CRAN",
-        "Date/Publication": "2014-12-07 08:28:55",
-        "Built": "R 3.5.0; ; 2018-04-23 04:05:34 UTC; unix"
-      }
-    },
-    "Rcpp": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "Rcpp",
-        "Title": "Seamless R and C++ Integration",
-        "Version": "0.12.19",
-        "Date": "2018-09-21",
-        "Author": "Dirk Eddelbuettel, Romain Francois, JJ Allaire, Kevin Ushey, Qiang Kou,\n Nathan Russell, Douglas Bates and John Chambers",
-        "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
-        "Description": "The 'Rcpp' package provides R functions as well as C++ classes which\n offer a seamless integration of R and C++. Many R data types and objects can be\n mapped back and forth to C++ equivalents which facilitates both writing of new\n code as well as easier integration of third-party libraries. Documentation\n about 'Rcpp' is provided by several vignettes included in this package, via the\n 'Rcpp Gallery' site at <http://gallery.rcpp.org>, the paper by Eddelbuettel and\n Francois (2011, <doi:10.18637/jss.v040.i08>), the book by Eddelbuettel (2013,\n <doi:10.1007/978-1-4614-6868-4>) and the paper by Eddelbuettel and Balamuta (2018,\n <doi:10.1080/00031305.2017.1375990>); see 'citation(\"Rcpp\")' for details.",
-        "Depends": "R (>= 3.0.0)",
-        "Imports": "methods, utils",
-        "Suggests": "RUnit, inline, rbenchmark, knitr, rmarkdown, pinp, pkgKitten\n(>= 0.1.2)",
-        "VignetteBuilder": "knitr",
-        "URL": "http://www.rcpp.org, http://dirk.eddelbuettel.com/code/rcpp.html,\nhttps://github.com/RcppCore/Rcpp",
-        "License": "GPL (>= 2)",
-        "BugReports": "https://github.com/RcppCore/Rcpp/issues",
-        "MailingList": "Please send questions and comments regarding Rcpp to\nrcpp-devel@lists.r-forge.r-project.org",
-        "RoxygenNote": "6.0.1",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-09-30 18:12:58.354107 UTC; edd",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-10-01 06:39:15 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-10-02 12:01:48 UTC; unix"
-      }
-    },
-    "crayon": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "crayon",
-        "Title": "Colored Terminal Output",
-        "Version": "1.3.4",
-        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\",\n    role = c(\"aut\", \"cre\")),\n    person(\n    \"Brodie\", \"Gaslam\", email=\"brodie.gaslam@yahoo.com\",\n    role=c(\"ctb\"))\n    )",
-        "Description": "Colored terminal output on terminals that support 'ANSI'\n    color and highlight codes. It also works in 'Emacs' 'ESS'. 'ANSI'\n    color support is automatically detected. Colors and highlighting can\n    be combined and nested. New styles can also be created easily.\n    This package was inspired by the 'chalk' 'JavaScript' project.",
-        "License": "MIT + file LICENSE",
-        "LazyData": "true",
-        "URL": "https://github.com/r-lib/crayon#readme",
-        "BugReports": "https://github.com/r-lib/crayon/issues",
-        "Collate": "'ansi-256.r' 'combine.r' 'string.r' 'utils.r'\n'crayon-package.r' 'disposable.r' 'has_ansi.r' 'has_color.r'\n'styles.r' 'machinery.r' 'parts.r' 'print.r' 'style-var.r'\n'show.r' 'string_operations.r'",
-        "Imports": "grDevices, methods, utils",
-        "Suggests": "mockery, rstudioapi, testthat, withr",
-        "RoxygenNote": "6.0.1.9000",
-        "Encoding": "UTF-8",
-        "NeedsCompilation": "no",
-        "Packaged": "2017-09-15 18:14:04 UTC; gaborcsardi",
-        "Author": "Gábor Csárdi [aut, cre],\n  Brodie Gaslam [ctb]",
-        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2017-09-16 19:49:46 UTC",
-        "Built": "R 3.5.0; ; 2018-04-23 04:01:40 UTC; unix"
-      }
-    },
-    "digest": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "digest",
-        "Author": "Dirk Eddelbuettel <edd@debian.org> with contributions \n by Antoine Lucas, Jarek Tuszynski, Henrik Bengtsson, Simon Urbanek,\n Mario Frasca, Bryan Lewis, Murray Stokely, Hannes Muehleisen,\n Duncan Murdoch, Jim Hester, Wush Wu, Qiang Kou, Thierry Onkelinx, \n Michel Lang, Viliam Simko, Kurt Hornik and Radford Neal.",
-        "Version": "0.6.17",
-        "Date": "2018-09-11",
-        "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
-        "Title": "Create Compact Hash Digests of R Objects",
-        "Description": "Implementation of a function 'digest()' for the creation \n of hash digests of arbitrary R objects (using the 'md5', 'sha-1', 'sha-256', \n 'crc32', 'xxhash' and 'murmurhash' algorithms) permitting easy comparison of R\n language objects, as well as a function 'hmac()' to create hash-based\n message authentication code. Please note that this package is not meant to\n be deployed for cryptographic purposes for which more comprehensive (and\n widely tested) libraries such as 'OpenSSL' should be used.",
-        "URL": "http://dirk.eddelbuettel.com/code/digest.html",
-        "BugReports": "https://github.com/eddelbuettel/digest/issues",
-        "Depends": "R (>= 3.1.0)",
-        "License": "GPL (>= 2)",
-        "Suggests": "knitr, rmarkdown",
-        "VignetteBuilder": "knitr",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-09-11 11:44:32.856117 UTC; edd",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-09-12 14:40:03 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-09-25 04:24:30 UTC; unix"
-      }
-    },
-    "htmltools": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "htmltools",
-        "Type": "Package",
-        "Title": "Tools for HTML",
-        "Version": "0.3.6",
-        "Date": "2017-04-26",
-        "Author": "RStudio, Inc.",
-        "Maintainer": "Joe Cheng <joe@rstudio.com>",
-        "Description": "Tools for HTML generation and output.",
-        "Depends": "R (>= 2.14.1)",
-        "Imports": "utils, digest, Rcpp",
-        "Suggests": "markdown, testthat",
-        "Enhances": "knitr",
-        "License": "GPL (>= 2)",
-        "URL": "https://github.com/rstudio/htmltools",
-        "BugReports": "https://github.com/rstudio/htmltools/issues",
-        "RoxygenNote": "6.0.1",
-        "LinkingTo": "Rcpp",
-        "NeedsCompilation": "yes",
-        "Packaged": "2017-04-27 00:04:32 UTC; jcheng",
-        "Repository": "CRAN",
-        "Date/Publication": "2017-04-28 07:41:46 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-04-23 15:44:14 UTC; unix"
-      }
-    },
-    "httpuv": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "httpuv",
-        "Type": "Package",
-        "Title": "HTTP and WebSocket Server Library",
-        "Version": "1.4.5",
-        "Author": "Joe Cheng, Hector Corrada Bravo [ctb], Jeroen Ooms [ctb],\n    Winston Chang [ctb]",
-        "Copyright": "RStudio, Inc.; Joyent, Inc.; Nginx Inc.; Igor Sysoev; Niels\nProvos; Internet Systems Consortium, Inc.; Alexander Chemeris",
-        "Maintainer": "Joe Cheng <joe@rstudio.com>",
-        "Description": "Provides low-level socket and protocol support for handling\n    HTTP and WebSocket requests directly from within R. It is primarily\n    intended as a building block for other packages, rather than making it\n    particularly easy to create complete web applications using httpuv alone.\n    httpuv is built on top of the libuv and http-parser C libraries, both of\n    which were developed by Joyent, Inc. (See LICENSE file for libuv and\n    http-parser license information.)",
-        "License": "GPL (>= 2) | file LICENSE",
-        "Depends": "R (>= 2.15.1), methods",
-        "Imports": "Rcpp (>= 0.11.0), utils, promises, later (>= 0.7.3)",
-        "LinkingTo": "Rcpp, BH, later",
-        "URL": "https://github.com/rstudio/httpuv",
-        "SystemRequirements": "GNU make",
-        "RoxygenNote": "6.0.1.9000",
-        "Suggests": "testthat, callr",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-07-18 15:28:56 UTC; winston",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-07-19 07:40:06 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-07-20 13:28:37 UTC; unix"
-      }
-    },
-    "jsonlite": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "jsonlite",
-        "Version": "1.5",
-        "Title": "A Robust, High Performance JSON Parser and Generator for R",
-        "License": "MIT + file LICENSE",
-        "NeedsCompilation": "yes",
-        "Depends": "methods",
-        "Author": "Jeroen Ooms, Duncan Temple Lang, Lloyd Hilaiel",
-        "URL": "https://arxiv.org/abs/1403.2805,\nhttps://www.opencpu.org/posts/jsonlite-a-smarter-json-encoder",
-        "BugReports": "http://github.com/jeroen/jsonlite/issues",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "VignetteBuilder": "knitr, R.rsp",
-        "Description": "A fast JSON parser and generator optimized for statistical data\n    and the web. Started out as a fork of 'RJSONIO', but has been completely\n    rewritten in recent versions. The package offers flexible, robust, high\n    performance tools for working with JSON in R and is particularly powerful\n    for building pipelines and interacting with a web API. The implementation is\n    based on the mapping described in the vignette (Ooms, 2014). In addition to\n    converting JSON data from/to R objects, 'jsonlite' contains functions to\n    stream, validate, and prettify JSON data. The unit tests included with the\n    package verify that all edge cases are encoded and decoded consistently for\n    use with dynamic data in systems and applications.",
-        "Suggests": "httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sp",
-        "RoxygenNote": "6.0.1.9000",
-        "Packaged": "2017-05-31 14:03:43 UTC; jeroen",
-        "Repository": "CRAN",
-        "Date/Publication": "2017-06-01 12:03:37 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-04-23 04:02:13 UTC; unix"
-      }
-    },
-    "later": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "later",
-        "Type": "Package",
-        "Title": "Utilities for Delaying Function Execution",
-        "Version": "0.7.5",
-        "Authors@R": "c(\n    person(\"Joe\", \"Cheng\", role = c(\"aut\", \"cre\"), email = \"joe@rstudio.com\"),\n    person(family = \"RStudio\", role = \"cph\"),\n    person(\"Marcus\", \"Geelnard\", role = c(\"ctb\", \"cph\"), comment = \"TinyCThread library, https://tinycthread.github.io/\"),\n    person(\"Evan\", \"Nemerson\", role = c(\"ctb\", \"cph\"), comment = \"TinyCThread library, https://tinycthread.github.io/\")\n    )",
-        "Description": "Executes arbitrary R or C functions some time after the current\n    time, after the R execution stack has emptied.",
-        "URL": "https://github.com/r-lib/later",
-        "BugReports": "https://github.com/r-lib/later/issues",
-        "License": "GPL (>= 2)",
-        "Imports": "Rcpp (>= 0.12.9), rlang",
-        "LinkingTo": "Rcpp, BH",
-        "RoxygenNote": "6.1.0",
-        "Suggests": "knitr, rmarkdown, testthat",
-        "VignetteBuilder": "knitr",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-09-14 22:59:16 UTC; jcheng",
-        "Author": "Joe Cheng [aut, cre],\n  RStudio [cph],\n  Marcus Geelnard [ctb, cph] (TinyCThread library,\n    https://tinycthread.github.io/),\n  Evan Nemerson [ctb, cph] (TinyCThread library,\n    https://tinycthread.github.io/)",
-        "Maintainer": "Joe Cheng <joe@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-09-18 22:20:03 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-09-25 05:12:02 UTC; unix"
-      }
-    },
-    "magrittr": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "magrittr",
-        "Type": "Package",
-        "Title": "A Forward-Pipe Operator for R",
-        "Version": "1.5",
-        "Author": "Stefan Milton Bache <stefan@stefanbache.dk> and\n    Hadley Wickham <h.wickham@gmail.com>",
-        "Maintainer": "Stefan Milton Bache <stefan@stefanbache.dk>",
-        "Description": "Provides a mechanism for chaining commands with a\n    new forward-pipe operator, %>%. This operator will forward a\n    value, or the result of an expression, into the next function\n    call/expression. There is flexible support for the type\n    of right-hand side expressions. For more information, see\n    package vignette.\n    To quote Rene Magritte, \"Ceci n'est pas un pipe.\"",
-        "Suggests": "testthat, knitr",
-        "VignetteBuilder": "knitr",
-        "License": "MIT + file LICENSE",
-        "ByteCompile": "Yes",
-        "Packaged": "2014-11-22 08:50:53 UTC; shb",
-        "NeedsCompilation": "no",
-        "Repository": "CRAN",
-        "Date/Publication": "2014-11-22 19:15:57",
-        "Built": "R 3.5.0; ; 2018-04-23 04:03:05 UTC; unix"
-      }
-    },
-    "memoise": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Encoding": "UTF-8",
-        "Package": "memoise",
-        "Title": "Memoisation of Functions",
-        "Version": "1.1.0",
-        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = \"aut\"),\n    person(\"Jim\", \"Hester\", , \"jim.hester@rstudio.com\", role = c(\"aut\", \"cre\")),\n    person(\"Kirill\", \"Müller\", , \"krlmlr+r@mailbox.org\", role = \"aut\"),\n    person(\"Daniel\", \"Cook\", , \"danielecook@gmail.com\", role = \"aut\"))",
-        "Description": "Cache the results of a function so that when you call it\n    again with the same arguments it returns the pre-computed value.",
-        "URL": "https://github.com/hadley/memoise",
-        "BugReports": "https://github.com/hadley/memoise/issues",
-        "Imports": "digest (>= 0.6.3)",
-        "Suggests": "testthat, aws.s3, httr, covr",
-        "Additional_repositories": "http://cloudyr.github.io/drat",
-        "License": "MIT + file LICENSE",
-        "RoxygenNote": "6.0.1",
-        "NeedsCompilation": "no",
-        "Packaged": "2017-04-20 17:35:47 UTC; jhester",
-        "Author": "Hadley Wickham [aut],\n  Jim Hester [aut, cre],\n  Kirill Müller [aut],\n  Daniel Cook [aut]",
-        "Maintainer": "Jim Hester <jim.hester@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2017-04-21 05:54:22 UTC",
-        "Built": "R 3.5.0; ; 2018-04-23 04:09:39 UTC; unix"
-      }
-    },
-    "mime": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "mime",
-        "Type": "Package",
-        "Title": "Map Filenames to MIME Types",
-        "Version": "0.5",
-        "Date": "2016-07-07",
-        "Authors@R": "c(person(\"Jeffrey\", \"Horner\", role = \"ctb\"),\n    person(\"Yihui\", \"Xie\", role = c(\"aut\", \"cre\"), email = \"xie@yihui.name\"))",
-        "Maintainer": "Yihui Xie <xie@yihui.name>",
-        "Description": "Guesses the MIME type from a filename extension using the data\n    derived from /etc/mime.types in UNIX-type systems.",
-        "Imports": "tools",
-        "License": "GPL",
-        "URL": "https://github.com/yihui/mime",
-        "BugReports": "https://github.com/yihui/mime/issues",
-        "LazyData": "TRUE",
-        "RoxygenNote": "5.0.1",
-        "NeedsCompilation": "yes",
-        "Packaged": "2016-07-07 04:44:41 UTC; yihui",
-        "Author": "Jeffrey Horner [ctb],\n  Yihui Xie [aut, cre]",
-        "Repository": "CRAN",
-        "Date/Publication": "2016-07-07 07:38:00",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-04-23 04:01:25 UTC; unix"
-      }
-    },
-    "promises": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "promises",
-        "Type": "Package",
-        "Title": "Abstractions for Promise-Based Asynchronous Programming",
-        "Version": "1.0.1",
-        "Authors@R": "c(\n      person(\"Joe\", \"Cheng\", email = \"joe@rstudio.com\", role = c(\"aut\", \"cre\")),\n      person(\"RStudio\", role = c(\"cph\", \"fnd\"))\n    )",
-        "Description": "Provides fundamental abstractions for doing asynchronous programming\n    in R using promises. Asynchronous programming is useful for allowing a single\n    R process to orchestrate multiple tasks in the background while also attending\n    to something else. Semantics are similar to 'JavaScript' promises, but with a\n    syntax that is idiomatic R.",
-        "License": "MIT + file LICENSE",
-        "Imports": "R6, Rcpp, later, rlang, stats, magrittr",
-        "Suggests": "testthat, future, knitr, rmarkdown",
-        "LinkingTo": "later, Rcpp",
-        "RoxygenNote": "6.0.1",
-        "Encoding": "UTF-8",
-        "LazyData": "true",
-        "VignetteBuilder": "knitr",
-        "URL": "https://rstudio.github.io/promises,\nhttps://github.com/rstudio/promises",
-        "BugReports": "https://github.com/rstudio/promises/issues",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-04-12 22:42:12 UTC; jcheng",
-        "Author": "Joe Cheng [aut, cre],\n  RStudio [cph, fnd]",
-        "Maintainer": "Joe Cheng <joe@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-04-13 08:59:30 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-04-23 22:34:15 UTC; unix"
-      }
-    },
-    "rlang": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "rlang",
-        "Version": "0.2.2",
-        "Title": "Functions for Base Types and Core R and 'Tidyverse' Features",
-        "Description": "A toolbox for working with base types, core R features\n  like the condition system, and core 'Tidyverse' features like tidy\n  evaluation.",
-        "Authors@R": "c(\n    person(\"Lionel\", \"Henry\", ,\"lionel@rstudio.com\", c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", ,\"hadley@rstudio.com\", \"aut\"),\n    person(\"RStudio\", role = \"cph\")\n    )",
-        "License": "GPL-3",
-        "LazyData": "true",
-        "ByteCompile": "true",
-        "Depends": "R (>= 3.1.0)",
-        "Suggests": "crayon, knitr, methods, pillar, rmarkdown (>= 0.2.65),\ntestthat, covr",
-        "RoxygenNote": "6.0.1",
-        "URL": "http://rlang.tidyverse.org, https://github.com/r-lib/rlang",
-        "BugReports": "https://github.com/r-lib/rlang/issues",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-08-14 17:56:07 UTC; lionel",
-        "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut],\n  RStudio [cph]",
-        "Maintainer": "Lionel Henry <lionel@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-08-16 18:20:03 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-08-17 14:29:13 UTC; unix"
-      }
-    },
-    "shiny": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "shiny",
-        "Type": "Package",
-        "Title": "Web Application Framework for R",
-        "Version": "1.2.0",
-        "Authors@R": "c(\n    person(\"Winston\", \"Chang\", role = c(\"aut\", \"cre\"), email = \"winston@rstudio.com\"),\n    person(\"Joe\", \"Cheng\", role = \"aut\", email = \"joe@rstudio.com\"),\n    person(\"JJ\", \"Allaire\", role = \"aut\", email = \"jj@rstudio.com\"),\n    person(\"Yihui\", \"Xie\", role = \"aut\", email = \"yihui@rstudio.com\"),\n    person(\"Jonathan\", \"McPherson\", role = \"aut\", email = \"jonathan@rstudio.com\"),\n    person(family = \"RStudio\", role = \"cph\"),\n    person(family = \"jQuery Foundation\", role = \"cph\",\n    comment = \"jQuery library and jQuery UI library\"),\n    person(family = \"jQuery contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"jQuery library; authors listed in inst/www/shared/jquery-AUTHORS.txt\"),\n    person(family = \"jQuery UI contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"jQuery UI library; authors listed in inst/www/shared/jqueryui/AUTHORS.txt\"),\n    person(\"Mark\", \"Otto\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(\"Jacob\", \"Thornton\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(family = \"Bootstrap contributors\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(family = \"Twitter, Inc\", role = \"cph\",\n    comment = \"Bootstrap library\"),\n    person(\"Alexander\", \"Farkas\", role = c(\"ctb\", \"cph\"),\n    comment = \"html5shiv library\"),\n    person(\"Scott\", \"Jehl\", role = c(\"ctb\", \"cph\"),\n    comment = \"Respond.js library\"),\n    person(\"Stefan\", \"Petre\", role = c(\"ctb\", \"cph\"),\n    comment = \"Bootstrap-datepicker library\"),\n    person(\"Andrew\", \"Rowls\", role = c(\"ctb\", \"cph\"),\n    comment = \"Bootstrap-datepicker library\"),\n    person(\"Dave\", \"Gandy\", role = c(\"ctb\", \"cph\"),\n    comment = \"Font-Awesome font\"),\n    person(\"Brian\", \"Reavis\", role = c(\"ctb\", \"cph\"),\n    comment = \"selectize.js library\"),\n    person(\"Kristopher Michael\", \"Kowal\", role = c(\"ctb\", \"cph\"),\n    comment = \"es5-shim library\"),\n    person(family = \"es5-shim contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"es5-shim library\"),\n    person(\"Denis\", \"Ineshin\", role = c(\"ctb\", \"cph\"),\n    comment = \"ion.rangeSlider library\"),\n    person(\"Sami\", \"Samhuri\", role = c(\"ctb\", \"cph\"),\n    comment = \"Javascript strftime library\"),\n    person(family = \"SpryMedia Limited\", role = c(\"ctb\", \"cph\"),\n    comment = \"DataTables library\"),\n    person(\"John\", \"Fraser\", role = c(\"ctb\", \"cph\"),\n    comment = \"showdown.js library\"),\n    person(\"John\", \"Gruber\", role = c(\"ctb\", \"cph\"),\n    comment = \"showdown.js library\"),\n    person(\"Ivan\", \"Sagalaev\", role = c(\"ctb\", \"cph\"),\n    comment = \"highlight.js library\"),\n    person(family = \"R Core Team\", role = c(\"ctb\", \"cph\"),\n    comment = \"tar implementation from R\")\n    )",
-        "Description": "Makes it incredibly easy to build interactive web\n    applications with R. Automatic \"reactive\" binding between inputs and\n    outputs and extensive prebuilt widgets make it possible to build\n    beautiful, responsive, and powerful applications with minimal effort.",
-        "License": "GPL-3 | file LICENSE",
-        "Depends": "R (>= 3.0.2), methods",
-        "Imports": "utils, grDevices, httpuv (>= 1.4.4), mime (>= 0.3), jsonlite\n(>= 0.9.16), xtable, digest, htmltools (>= 0.3.5), R6 (>= 2.0),\nsourcetools, later (>= 0.7.2), promises (>= 1.0.1), tools,\ncrayon, rlang",
-        "Suggests": "datasets, Cairo (>= 1.5-5), testthat, knitr (>= 1.6),\nmarkdown, rmarkdown, ggplot2, magrittr",
-        "URL": "http://shiny.rstudio.com",
-        "BugReports": "https://github.com/rstudio/shiny/issues",
-        "Collate": "'app.R' 'bookmark-state-local.R' 'stack.R' 'bookmark-state.R'\n'bootstrap-layout.R' 'globals.R' 'conditions.R' 'map.R'\n'utils.R' 'bootstrap.R' 'cache-context.R' 'cache-disk.R'\n'cache-memory.R' 'cache-utils.R' 'diagnose.R' 'fileupload.R'\n'font-awesome.R' 'graph.R' 'reactives.R' 'reactive-domains.R'\n'history.R' 'hooks.R' 'html-deps.R' 'htmltools.R'\n'image-interact-opts.R' 'image-interact.R' 'imageutils.R'\n'input-action.R' 'input-checkbox.R' 'input-checkboxgroup.R'\n'input-date.R' 'input-daterange.R' 'input-file.R'\n'input-numeric.R' 'input-password.R' 'input-radiobuttons.R'\n'input-select.R' 'input-slider.R' 'input-submit.R'\n'input-text.R' 'input-textarea.R' 'input-utils.R'\n'insert-tab.R' 'insert-ui.R' 'jqueryui.R' 'middleware-shiny.R'\n'middleware.R' 'modal.R' 'modules.R' 'notifications.R'\n'priorityqueue.R' 'progress.R' 'react.R' 'render-cached-plot.R'\n'render-plot.R' 'render-table.R' 'run-url.R' 'serializers.R'\n'server-input-handlers.R' 'server.R' 'shiny-options.R'\n'shiny.R' 'shinyui.R' 'shinywrappers.R' 'showcase.R'\n'snapshot.R' 'tar.R' 'test-export.R' 'timer.R' 'update-input.R'",
-        "RoxygenNote": "6.1.0",
-        "NeedsCompilation": "no",
-        "Packaged": "2018-11-02 16:06:02 UTC; jcheng",
-        "Author": "Winston Chang [aut, cre],\n  Joe Cheng [aut],\n  JJ Allaire [aut],\n  Yihui Xie [aut],\n  Jonathan McPherson [aut],\n  RStudio [cph],\n  jQuery Foundation [cph] (jQuery library and jQuery UI library),\n  jQuery contributors [ctb, cph] (jQuery library; authors listed in\n    inst/www/shared/jquery-AUTHORS.txt),\n  jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in\n    inst/www/shared/jqueryui/AUTHORS.txt),\n  Mark Otto [ctb] (Bootstrap library),\n  Jacob Thornton [ctb] (Bootstrap library),\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Alexander Farkas [ctb, cph] (html5shiv library),\n  Scott Jehl [ctb, cph] (Respond.js library),\n  Stefan Petre [ctb, cph] (Bootstrap-datepicker library),\n  Andrew Rowls [ctb, cph] (Bootstrap-datepicker library),\n  Dave Gandy [ctb, cph] (Font-Awesome font),\n  Brian Reavis [ctb, cph] (selectize.js library),\n  Kristopher Michael Kowal [ctb, cph] (es5-shim library),\n  es5-shim contributors [ctb, cph] (es5-shim library),\n  Denis Ineshin [ctb, cph] (ion.rangeSlider library),\n  Sami Samhuri [ctb, cph] (Javascript strftime library),\n  SpryMedia Limited [ctb, cph] (DataTables library),\n  John Fraser [ctb, cph] (showdown.js library),\n  John Gruber [ctb, cph] (showdown.js library),\n  Ivan Sagalaev [ctb, cph] (highlight.js library),\n  R Core Team [ctb, cph] (tar implementation from R)",
-        "Maintainer": "Winston Chang <winston@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-11-02 19:20:03 UTC",
-        "Built": "R 3.5.0; ; 2018-11-03 12:25:10 UTC; unix"
-      }
-    },
-    "slam": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "slam",
-        "Version": "0.1-43",
-        "Title": "Sparse Lightweight Arrays and Matrices",
-        "Authors@R": "c(person(\"Kurt\", \"Hornik\", role = c(\"aut\", \"cre\"),\n                     email = \"Kurt.Hornik@R-project.org\",\n\t\t     comment = c(ORCID = \"0000-0003-4198-9911\")),\n             person(\"David\", \"Meyer\", role = \"aut\"),\n             person(\"Christian\", \"Buchta\", role = \"aut\"))",
-        "Description": "Data structures and algorithms for sparse arrays and matrices,\n  based on index arrays and simple triplet representations, respectively.",
-        "Depends": "R (>= 3.4.0)",
-        "Imports": "stats",
-        "Enhances": "Matrix, SparseM, spam",
-        "License": "GPL-2",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-04-23 04:42:41 UTC; hornik",
-        "Author": "Kurt Hornik [aut, cre] (<https://orcid.org/0000-0003-4198-9911>),\n  David Meyer [aut],\n  Christian Buchta [aut]",
-        "Maintainer": "Kurt Hornik <Kurt.Hornik@R-project.org>",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-04-23 09:11:30 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-04-25 15:01:03 UTC; unix"
-      }
-    },
-    "sourcetools": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "sourcetools",
-        "Type": "Package",
-        "Title": "Tools for Reading, Tokenizing and Parsing R Code",
-        "Version": "0.1.7",
-        "Author": "Kevin Ushey",
-        "Maintainer": "Kevin Ushey <kevinushey@gmail.com>",
-        "Description": "Tools for the reading and tokenization of R code. The\n    'sourcetools' package provides both an R and C++ interface for the tokenization\n    of R code, and helpers for interacting with the tokenized representation of R\n    code.",
-        "License": "MIT + file LICENSE",
-        "LazyData": "TRUE",
-        "Depends": "R (>= 3.0.2)",
-        "Suggests": "testthat",
-        "RoxygenNote": "5.0.1",
-        "BugReports": "https://github.com/kevinushey/sourcetools/issues",
-        "Encoding": "UTF-8",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-04-25 03:19:22 UTC; kevin",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-04-25 03:38:09 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-04-25 17:24:13 UTC; unix"
-      }
-    },
-    "tm": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "tm",
-        "Title": "Text Mining Package",
-        "Version": "0.7-5",
-        "Date": "2018-07-29",
-        "Authors@R": "c(person(\"Ingo\", \"Feinerer\", role = c(\"aut\", \"cre\"),\n                    email = \"feinerer@logic.at\",\n                    comment = c(ORCID = \"0000-0001-7656-8338\")),\n             person(\"Kurt\", \"Hornik\", role = \"aut\",\n                    comment = c(ORCID = \"0000-0003-4198-9911\")),\n             person(\"Artifex Software, Inc.\", role = c(\"ctb\", \"cph\"),\n                    comment = \"pdf_info.ps taken from GPL Ghostscript\"))",
-        "Depends": "R (>= 3.2.0), NLP (>= 0.1-6.2)",
-        "Imports": "Rcpp, parallel, slam (>= 0.1-37), stats, tools, utils,\ngraphics, xml2",
-        "LinkingTo": "BH, Rcpp",
-        "Suggests": "antiword, filehash, methods, pdftools, Rcampdf, Rgraphviz,\nRpoppler, SnowballC, testthat, tm.lexicon.GeneralInquirer",
-        "SystemRequirements": "C++11",
-        "Description": "A framework for text mining applications within R.",
-        "License": "GPL-3",
-        "URL": "http://tm.r-forge.r-project.org/",
-        "Additional_repositories": "https://datacube.wu.ac.at",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-07-29 16:33:17 UTC; hornik",
-        "Author": "Ingo Feinerer [aut, cre] (<https://orcid.org/0000-0001-7656-8338>),\n  Kurt Hornik [aut] (<https://orcid.org/0000-0003-4198-9911>),\n  Artifex Software, Inc. [ctb, cph] (pdf_info.ps taken from GPL\n    Ghostscript)",
-        "Maintainer": "Ingo Feinerer <feinerer@logic.at>",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-07-29 16:56:27 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-07-30 14:21:05 UTC; unix"
-      }
-    },
-    "wordcloud": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "wordcloud",
-        "Type": "Package",
-        "Title": "Word Clouds",
-        "Version": "2.6",
-        "Author": "Ian Fellows",
-        "Maintainer": "Ian Fellows <ian@fellstat.com>",
-        "Description": "Functionality to create pretty word clouds, visualize differences and similarity between documents, and avoid over-plotting in scatter plots with text.",
-        "License": "LGPL-2.1",
-        "LazyLoad": "yes",
-        "Depends": "methods, RColorBrewer",
-        "Imports": "Rcpp (>= 0.9.4)",
-        "Suggests": "tm (>= 0.6), slam",
-        "URL": "http://blog.fellstat.com/?cat=11 http://www.fellstat.com",
-        "LinkingTo": "Rcpp",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-08-24 18:57:30 UTC; ianfellows",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-08-24 19:20:03 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-08-25 15:22:23 UTC; unix"
-      }
-    },
-    "xml2": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "xml2",
-        "Version": "1.2.0",
-        "Title": "Parse XML",
-        "Description": "Work with XML files using a simple, consistent interface. Built on\n    top of the 'libxml2' C library.",
-        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", \"aut\"),\n    person(\"James\", \"Hester\", , \"james.hester@rstudio.com\", c(\"aut\", \"cre\")),\n    person(\"Jeroen\", \"Ooms\", role = \"aut\"),\n    person(\"RStudio\", role = \"cph\"),\n    person(\"R Foundation\", role = \"ctb\",\n      comment = \"Copy of R-project homepage cached as example\")\n    )",
-        "URL": "https://github.com/r-lib/xml2",
-        "BugReports": "https://github.com/r-lib/xml2/issues",
-        "Depends": "R (>= 3.1.0)",
-        "Imports": "Rcpp",
-        "LinkingTo": "Rcpp (>= 0.12.12)",
-        "Suggests": "testthat, curl, covr, knitr, rmarkdown, magrittr, httr",
-        "SystemRequirements": "libxml2: libxml2-dev (deb), libxml2-devel (rpm)",
-        "License": "GPL (>= 2)",
-        "RoxygenNote": "6.0.1",
-        "VignetteBuilder": "knitr",
-        "Collate": "'RcppExports.R' 'as_list.R' 'xml_parse.R' 'as_xml_document.R'\n'classes.R' 'init.R' 'paths.R' 'utils.R' 'xml_attr.R'\n'xml_children.R' 'xml_find.R' 'xml_modify.R' 'xml_name.R'\n'xml_namespaces.R' 'xml_path.R' 'xml_schema.R'\n'xml_serialize.R' 'xml_structure.R' 'xml_text.R' 'xml_type.R'\n'xml_url.R' 'xml_write.R' 'zzz.R'",
-        "NeedsCompilation": "yes",
-        "Packaged": "2018-01-23 14:02:37 UTC; jhester",
-        "Author": "Hadley Wickham [aut],\n  James Hester [aut, cre],\n  Jeroen Ooms [aut],\n  RStudio [cph],\n  R Foundation [ctb] (Copy of R-project homepage cached as example)",
-        "Maintainer": "James Hester <james.hester@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2018-01-24 14:50:28 UTC",
-        "Built": "R 3.5.0; x86_64-apple-darwin15.6.0; 2018-04-23 04:30:34 UTC; unix"
-      }
-    },
-    "xtable": {
-      "Source": "CRAN",
-      "Repository": "https://cran.rstudio.com/",
-      "description": {
-        "Package": "xtable",
-        "Version": "1.8-3",
-        "Date": "2018-08-29",
-        "Title": "Export Tables to LaTeX or HTML",
-        "Authors@R": "c(person(\"David B.\", \"Dahl\", role=\"aut\"),\n             person(\"David\", \"Scott\", role=c(\"aut\",\"cre\"),\n               email=\"d.scott@auckland.ac.nz\"),\n             person(\"Charles\", \"Roosen\", role=\"aut\"),\n             person(\"Arni\", \"Magnusson\", role=\"aut\"),\n             person(\"Jonathan\", \"Swinton\", role=\"aut\"),\n             person(\"Ajay\", \"Shah\", role=\"ctb\"),\n             person(\"Arne\", \"Henningsen\", role=\"ctb\"),\n             person(\"Benno\", \"Puetz\", role=\"ctb\"),\n             person(\"Bernhard\", \"Pfaff\", role=\"ctb\"),\n             person(\"Claudio\", \"Agostinelli\", role=\"ctb\"),\n             person(\"Claudius\", \"Loehnert\", role=\"ctb\"),\n             person(\"David\", \"Mitchell\", role=\"ctb\"),\n             person(\"David\", \"Whiting\", role=\"ctb\"),\n             person(\"Fernando da\", \"Rosa\", role=\"ctb\"),\n             person(\"Guido\", \"Gay\", role=\"ctb\"),\n             person(\"Guido\", \"Schulz\", role=\"ctb\"),\n             person(\"Ian\", \"Fellows\", role=\"ctb\"),\n             person(\"Jeff\", \"Laake\", role=\"ctb\"),\n             person(\"John\", \"Walker\", role=\"ctb\"),\n             person(\"Jun\", \"Yan\", role=\"ctb\"),\n             person(\"Liviu\", \"Andronic\", role=\"ctb\"),\n             person(\"Markus\", \"Loecher\", role=\"ctb\"),\n             person(\"Martin\", \"Gubri\", role=\"ctb\"),\n             person(\"Matthieu\", \"Stigler\", role=\"ctb\"),\n             person(\"Robert\", \"Castelo\", role=\"ctb\"),\n             person(\"Seth\", \"Falcon\", role=\"ctb\"),\n             person(\"Stefan\", \"Edwards\", role=\"ctb\"),\n             person(\"Sven\", \"Garbade\", role=\"ctb\"),\n             person(\"Uwe\", \"Ligges\", role=\"ctb\"))",
-        "Maintainer": "David Scott <d.scott@auckland.ac.nz>",
-        "Imports": "stats, utils",
-        "Suggests": "knitr, spdep, splm, sphet, plm, zoo, survival",
-        "VignetteBuilder": "knitr",
-        "Description": "Coerce data to LaTeX and HTML tables.",
-        "URL": "http://xtable.r-forge.r-project.org/",
-        "Depends": "R (>= 2.10.0)",
-        "License": "GPL (>= 2)",
-        "Repository": "CRAN",
-        "NeedsCompilation": "no",
-        "Packaged": "2018-08-29 20:21:51 UTC; dsco036",
-        "Author": "David B. Dahl [aut],\n  David Scott [aut, cre],\n  Charles Roosen [aut],\n  Arni Magnusson [aut],\n  Jonathan Swinton [aut],\n  Ajay Shah [ctb],\n  Arne Henningsen [ctb],\n  Benno Puetz [ctb],\n  Bernhard Pfaff [ctb],\n  Claudio Agostinelli [ctb],\n  Claudius Loehnert [ctb],\n  David Mitchell [ctb],\n  David Whiting [ctb],\n  Fernando da Rosa [ctb],\n  Guido Gay [ctb],\n  Guido Schulz [ctb],\n  Ian Fellows [ctb],\n  Jeff Laake [ctb],\n  John Walker [ctb],\n  Jun Yan [ctb],\n  Liviu Andronic [ctb],\n  Markus Loecher [ctb],\n  Martin Gubri [ctb],\n  Matthieu Stigler [ctb],\n  Robert Castelo [ctb],\n  Seth Falcon [ctb],\n  Stefan Edwards [ctb],\n  Sven Garbade [ctb],\n  Uwe Ligges [ctb]",
-        "Date/Publication": "2018-08-29 23:10:02 UTC",
-        "Built": "R 3.5.0; ; 2018-08-30 14:42:31 UTC; unix"
-      }
-    }
-  },
+  "packages": null,
   "files": {
-    "app.R": {
-      "checksum": "25a21dae65b3d98a91438c70c076350f"
+    ".RData": {
+      "checksum": "4f6fc992569adb0ba0f7a56811c30cf5"
     },
-    "data/merchant.txt.gz": {
-      "checksum": "3a8a44f56f129d81d1b4549a1e622bf1"
+    ".RDataTmp": {
+      "checksum": "336fb694ae0df9e6265101be7f1c4adb"
     },
-    "data/romeo.txt.gz": {
-      "checksum": "51a219814e72b4aae324baabd9d6d1ef"
+    "datasets/ANC/All 2020 ANC LN Data.csv": {
+      "checksum": "a7098b92f47aa9d04424eb1b36f0deeb"
     },
-    "data/summer.txt.gz": {
-      "checksum": "8fc52fb449a0b67839c8629057f94cfd"
+    "datasets/ANC/All 2021 ANC LN Data.csv": {
+      "checksum": "5971308a29f286474b443fabcdbef67c"
     },
-    "DESCRIPTION": {
-      "checksum": "288832286557566d0ca548f270bb4bc3"
+    "datasets/ANC/All 2022 ANC LN Data.csv": {
+      "checksum": "83665380c43a38f24d4816d4a94f60c4"
     },
-    "packrat/desc/BH": {
-      "checksum": "09f594fce9373c424229c876e0abde78"
+    "datasets/ANC/All 2023 ANC LN Data.csv": {
+      "checksum": "46f511541471ebb81a4ef721b8d74bd4"
     },
-    "packrat/desc/crayon": {
-      "checksum": "f922b0be335b616fbf18f348ff32ab51"
+    "datasets/ANC/All 2024 ANC LN Data (till April 2024).csv": {
+      "checksum": "fdc65d87a93b44f96be98aa8ba4dbb9c"
     },
-    "packrat/desc/digest": {
-      "checksum": "d56e19aedce9e10e1d4e339e04c069b1"
+    "datasets/Maternity/All 2020 Maternity LN Data.csv": {
+      "checksum": "3da3930e2d46fd891088dac6b83271d9"
     },
-    "packrat/desc/htmltools": {
-      "checksum": "735e6e3a30e5d4de43ed4cb791fda118"
+    "datasets/Maternity/All 2021 Maternity LN Data.csv": {
+      "checksum": "7a3c1e1e91b91fa9276608b3e83186c5"
     },
-    "packrat/desc/httpuv": {
-      "checksum": "21a28521fbecf705df4beacf2e227eda"
+    "datasets/Maternity/All 2022 Maternity LN Data.csv": {
+      "checksum": "0f096eecd8e6f12ed4825d03e2af3ad6"
     },
-    "packrat/desc/jsonlite": {
-      "checksum": "63847cc28fb14722cbb12ab214d971cb"
+    "datasets/Maternity/All 2023 Maternity LN Data.csv": {
+      "checksum": "70760b187beae9bd83855501594c3e85"
     },
-    "packrat/desc/later": {
-      "checksum": "4322023a1b1edc430cb1217311513d2e"
+    "datasets/Maternity/All 2024 Maternity Data (till April).csv": {
+      "checksum": "939c88b4b916b7ef9c2f41d83ecf601f"
     },
-    "packrat/desc/magrittr": {
-      "checksum": "5ec532c6b8c2afd30d8d4d3cc40084a0"
+    "datasets/Patient Volume/All 2020 PV LN data.csv": {
+      "checksum": "a3f45fb6f950ebcda946dec96f8c2d1f"
     },
-    "packrat/desc/memoise": {
-      "checksum": "ab023594ef10b321fe01c6efcb7bbedc"
+    "datasets/Patient Volume/All 2021 PV LN Data.csv": {
+      "checksum": "1550b5bac7455338c5028f3197d79638"
     },
-    "packrat/desc/mime": {
-      "checksum": "72aa915d25bdfa0ac329db98f5a2377e"
+    "datasets/Patient Volume/All 2022 PV LN Data.csv": {
+      "checksum": "196fb0c7a015e36cb8e3ee2f8bf21bc3"
     },
-    "packrat/desc/NLP": {
-      "checksum": "54ff7d421819ef7218bccf4d42aee77b"
+    "datasets/Patient Volume/All 2023 PV LN Data.csv": {
+      "checksum": "3d1fb3da663337b63264a93f58cfb4af"
     },
-    "packrat/desc/promises": {
-      "checksum": "d319b65a6788ae0e7f17c34127947f9b"
+    "datasets/Patient Volume/All 2024 PV LN Data.csv": {
+      "checksum": "1e07eca5d0b5179265509d3e5822277f"
     },
-    "packrat/desc/R6": {
-      "checksum": "43a7e86ce1e2efbec8d41627e78708da"
+    "docs/app.json": {
+      "checksum": "310f99f1954ea55ae3c98198fcd11b6a"
     },
-    "packrat/desc/RColorBrewer": {
-      "checksum": "0ee5c46064bbd525da5dc164a798b89a"
+    "docs/edit/index.html": {
+      "checksum": "551f667063e959a41c8f65b1aa43d3e3"
     },
-    "packrat/desc/Rcpp": {
-      "checksum": "14579f9f143f74a4d7c8e4d5f065da5e"
+    "docs/index.html": {
+      "checksum": "942f8273c951fc92477e0cc8c4ed139f"
     },
-    "packrat/desc/rlang": {
-      "checksum": "2a3e1e48be723f79adba18566f9bc84e"
+    "docs/shinylive-sw.js": {
+      "checksum": "d6ff7593d915291b97c57f7a2632c787"
     },
-    "packrat/desc/shiny": {
-      "checksum": "58275d3f706f8ca72de3ab4422c9a453"
+    "docs/shinylive/chunk-GWAOPURX.js": {
+      "checksum": "fb2dc929468a02c8f4c6748588928170"
     },
-    "packrat/desc/slam": {
-      "checksum": "7486329ee72a2d48db056c324270b5c5"
+    "docs/shinylive/Editor.css": {
+      "checksum": "a8401fdeb839219f79d0c769b5e2db2f"
     },
-    "packrat/desc/sourcetools": {
-      "checksum": "0fd9224a3c3a0aa70d54bf9a44520fd4"
+    "docs/shinylive/Editor.js": {
+      "checksum": "ea5851df3cd9ee7c2391413449e21205"
     },
-    "packrat/desc/tm": {
-      "checksum": "237f03467028e4e5ed8543219c4da0ce"
+    "docs/shinylive/load-shinylive-sw.js": {
+      "checksum": "d9fa3595d7718760dea1f41feffe52a9"
     },
-    "packrat/desc/wordcloud": {
-      "checksum": "6434eb7d79937e6b92241b745a1489a0"
+    "docs/shinylive/pyodide-worker.js": {
+      "checksum": "03ffa996c6908ee55cb24e2c76c7a9d2"
     },
-    "packrat/desc/xml2": {
-      "checksum": "b0d80f14bb4da246066ca34205d2a02d"
+    "docs/shinylive/run-python-blocks.js": {
+      "checksum": "678bb150bf9cf7bc337b208f4f5e672f"
     },
-    "packrat/desc/xtable": {
-      "checksum": "7c27a0de4cf9cfeb92466acbd5abc590"
+    "docs/shinylive/shinylive.css": {
+      "checksum": "46d3bce19e3e728a79f0a07e59adf358"
     },
-    "packrat/packrat.lock": {
-      "checksum": "0f1fefdfc111c5503b7a794debe7ef33"
+    "docs/shinylive/shinylive.js": {
+      "checksum": "0d4dca2f4f2dd914db23b508e3d31c7b"
     },
-    "README.md": {
-      "checksum": "d4ce8ffce18ce7d7c0d7c68b1b990da8"
+    "docs/shinylive/style-resets.css": {
+      "checksum": "326179a3af08325314a9f92ef53b7b20"
+    },
+    "docs/shinylive/webr/esbuild.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/libRblas.so": {
+      "checksum": "fd13b9763c979e9df90aeafe2ece6b90"
+    },
+    "docs/shinylive/webr/libRlapack.so": {
+      "checksum": "f94f1429e42496f09c6e05b7d9249464"
+    },
+    "docs/shinylive/webr/R.bin.data": {
+      "checksum": "160f7616e765c2668b7bd1a21df4e278"
+    },
+    "docs/shinylive/webr/R.bin.js": {
+      "checksum": "a34b590e28af7829a79bb1241dbab8fe"
+    },
+    "docs/shinylive/webr/R.bin.wasm": {
+      "checksum": "6f4cd65956de1248b54dcf7a23509795"
+    },
+    "docs/shinylive/webr/repl/App.d.ts": {
+      "checksum": "45461e1112ad6f37590f602b60521bec"
+    },
+    "docs/shinylive/webr/repl/components/Editor.d.ts": {
+      "checksum": "5b8695b453c0db4eaaa0bc8c7bed8cfa"
+    },
+    "docs/shinylive/webr/repl/components/Files.d.ts": {
+      "checksum": "85184877fbba6a5cf7cdeac40f2698b1"
+    },
+    "docs/shinylive/webr/repl/components/Plot.d.ts": {
+      "checksum": "3446e718672bb3130aa2df3e33eceadb"
+    },
+    "docs/shinylive/webr/repl/components/Terminal.d.ts": {
+      "checksum": "d416d609d673331f431e42e58d02ba1c"
+    },
+    "docs/shinylive/webr/repl/components/utils.d.ts": {
+      "checksum": "b9f9171cc64739ca15d789bbf6529271"
+    },
+    "docs/shinylive/webr/tests/packages/webr.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/chan/channel-postmessage.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/console.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/error.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/proxy.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/robj.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/utils.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/webr-main.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/webr-r.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/tests/webR/webr-worker.test.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "docs/shinylive/webr/vfs/etc/fonts/fonts.conf": {
+      "checksum": "6300427804c4677462c2b187d9e2d3d3"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/doc.data": {
+      "checksum": "c613fe632bde522c8dffb1b3b379bbaf"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/doc.js.metadata": {
+      "checksum": "ff5b55dc452a434ea166616f15146414"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/base/demo.data": {
+      "checksum": "b97fa10e3624a40ddc242cf1f90ca33e"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/base/demo.js.metadata": {
+      "checksum": "fe59ac9830a37f3e4cbf46dfd544dfa7"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/base/help.data": {
+      "checksum": "ab0d7b67ed5355d9d619f0366c6e713f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/base/help.js.metadata": {
+      "checksum": "580fcf389540dcacf761671ec8b56da9"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/base/html.data": {
+      "checksum": "23ff564f907182b4df63fc60c3f917c7"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/base/html.js.metadata": {
+      "checksum": "fd851526fb79ab86be421c2170b4005b"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/compiler/help.data": {
+      "checksum": "599db0a6ce40bcae3b87b0b819688f75"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/compiler/help.js.metadata": {
+      "checksum": "79639ae928d7ca7c6ae864bb40ac4212"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/compiler/html.data": {
+      "checksum": "4d603ac761ec2af3a1912c494500ea28"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/compiler/html.js.metadata": {
+      "checksum": "95a6c6c9ee587fd7187539b01ea421e2"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/compiler/tests.data": {
+      "checksum": "4acc43a3194602c51ea78605a52d8078"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/compiler/tests.js.metadata": {
+      "checksum": "3781d88991275b3dd34ce121eda11110"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/datasets/help.data": {
+      "checksum": "d03447e153be2429d4b19ddc22cef3c7"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/datasets/help.js.metadata": {
+      "checksum": "0bd7de3a34969adb89d8e97ad4ef93db"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/datasets/html.data": {
+      "checksum": "dc76029795e792f6da44ed3c01af5c7e"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/datasets/html.js.metadata": {
+      "checksum": "407d6c036ab875fcac40df7bcfb5dc21"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/graphics/demo.data": {
+      "checksum": "d008cd970f9bd1cb3846f80b20b21481"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/graphics/demo.js.metadata": {
+      "checksum": "f6332c7e2f56012d47b2ef05251a03af"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/graphics/help.data": {
+      "checksum": "3eb51649787c80accb652dcbc28f15d2"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/graphics/help.js.metadata": {
+      "checksum": "d55b593d09c345a69829fafef67c4a78"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/graphics/html.data": {
+      "checksum": "545916adabc6f64a4130064176e9efe7"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/graphics/html.js.metadata": {
+      "checksum": "3a7f8f6002abecac71886ca09f35fccf"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/afm.data": {
+      "checksum": "a3b09aa7bc18098190659e05580272d9"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/afm.js.metadata": {
+      "checksum": "b8e7a18d5d1adba8e15927a0492b956d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/demo.data": {
+      "checksum": "115c0b165ee413e82a3d0b3562c6b9f2"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/demo.js.metadata": {
+      "checksum": "f5df59543ddbdb38165abc0af959ee9e"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/enc.data": {
+      "checksum": "fddb700b1b442f714fb93e87c2cb6691"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/enc.js.metadata": {
+      "checksum": "3135aac16c77273aa91b2bc77958475f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/fonts.data": {
+      "checksum": "fa92dca6ba97a7bbe299a80374eae23a"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/fonts.js.metadata": {
+      "checksum": "32fc8ec23753b36a14cddda492ba08df"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/help.data": {
+      "checksum": "c95cf4e8a8f0c004c0322411a068b9a0"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/help.js.metadata": {
+      "checksum": "66e049c12f48d8d28fc3fc4d8de5f341"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/html.data": {
+      "checksum": "4c46557949a711ca822c220f3d6dbd48"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/html.js.metadata": {
+      "checksum": "6e8a0575f2ddc6399366c9b2cf897648"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/libs/cairo.so": {
+      "checksum": "99e6d60cbcb8b563f1d3bcc0c8b3b1ff"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/tests.data": {
+      "checksum": "8bb94b7774ac628dd9b2cb9a72c327a9"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grDevices/tests.js.metadata": {
+      "checksum": "3d93e643fa7f9ec2fccf5f09aca4605d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/doc.data": {
+      "checksum": "2111885c2c163465aa6f426c4fdb127b"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/doc.js.metadata": {
+      "checksum": "eee83c1c302dae5dd314a69667f04ab4"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/help.data": {
+      "checksum": "9ad4ef7ebc4f7bbb9ae53e5a2c12b8ff"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/help.js.metadata": {
+      "checksum": "e72a25dce883f5e4387988740fd5019b"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/html.data": {
+      "checksum": "5ffa3ef25a8aae28a05edf15f0061499"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/html.js.metadata": {
+      "checksum": "1777ecf014c3b5d0a199c703afe7a4a7"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/tests.data": {
+      "checksum": "fb3ef1850b3981673ba5090022ef468f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/grid/tests.js.metadata": {
+      "checksum": "3e4ce961edee97526a8b3090e3dba3f2"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/methods/help.data": {
+      "checksum": "226fe5164bf3195f1b31efdba3d6b50f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/methods/help.js.metadata": {
+      "checksum": "13e8e741be60b3ed96fab4db92c0055c"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/methods/html.data": {
+      "checksum": "bb65284618c6261b91aa98a4a15561c4"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/methods/html.js.metadata": {
+      "checksum": "52d580d6f64f0926d85899d6b0767959"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/methods/tests.data": {
+      "checksum": "4b88fcdf4bff83113cce4b235ff59e46"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/methods/tests.js.metadata": {
+      "checksum": "984f009b1cbc07d918de09edba403b31"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/parallel.data": {
+      "checksum": "90be568fcb4a583e70d135eccb700f16"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/parallel.js.metadata": {
+      "checksum": "4a12abed76e0ab0ab1f4b90460ae9cf6"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/splines/help.data": {
+      "checksum": "77fbefb1b6e697751f43c88c9e4704cc"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/splines/help.js.metadata": {
+      "checksum": "52abffe7ba66da311be56000f1d1d14d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/splines/html.data": {
+      "checksum": "abd8bf228df6b9e4f148db4d50dd9548"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/splines/html.js.metadata": {
+      "checksum": "36277e71756145d8a58eb555099570f7"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/splines/tests.data": {
+      "checksum": "2c970b50d6d05663c8297ed3db14e53d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/splines/tests.js.metadata": {
+      "checksum": "a75dfeb75efac9b43410c98ef35303c2"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/demo.data": {
+      "checksum": "81da0f6483fbea6d7d987b833adaf876"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/demo.js.metadata": {
+      "checksum": "6a7b734f0d0dc8d9535c2e07abe643d0"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/help.data": {
+      "checksum": "ef5d80f5b24368398d7046adc95677ff"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/help.js.metadata": {
+      "checksum": "ad9639d287b2617612512f9946b7bda9"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/html.data": {
+      "checksum": "e834dbf229ccd85231d4591bcb0e3827"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/html.js.metadata": {
+      "checksum": "7450f428d1fceeca9ab011520d6deba5"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/tests.data": {
+      "checksum": "dfc667adb987646af2e6811fcfe6d343"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats/tests.js.metadata": {
+      "checksum": "bee72a7c5cdb379d28c489baabd018f9"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats4/help.data": {
+      "checksum": "a1224e0d96dde8d1c4e8253f018dd507"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats4/help.js.metadata": {
+      "checksum": "05ff9d742c6ef55ccc4d2ea47f186bc6"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats4/html.data": {
+      "checksum": "ceb829990e018b1012b6307dfacb85ed"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats4/html.js.metadata": {
+      "checksum": "2241053863a66820a293b7f73df4ebf5"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats4/tests.data": {
+      "checksum": "d2606b2f293b232851e6daefc394391d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/stats4/tests.js.metadata": {
+      "checksum": "fd4eeb673585d7386c54d1117793c688"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tcltk.data": {
+      "checksum": "f57ef161fb0e0f00d52a7e6b6061bc5d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tcltk.js.metadata": {
+      "checksum": "5d72a09d13b6a7d6ff360afc88411296"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tools/help.data": {
+      "checksum": "2531c05718d9f41b67b0fa9dbaf2f27d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tools/help.js.metadata": {
+      "checksum": "75fad6e610298448e492e806ea752614"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tools/html.data": {
+      "checksum": "18bb7da2f57f17f3861169db44d34d7e"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tools/html.js.metadata": {
+      "checksum": "00de76ef4ac004e79baa552fe7485e3e"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tools/tests.data": {
+      "checksum": "660f40abb307aa37974ac2e2c63ff824"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/tools/tests.js.metadata": {
+      "checksum": "b84111befd4937058fdb76e166a3474e"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/translations.data": {
+      "checksum": "af4f0a099529b14f223390bdeef85eca"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/translations.js.metadata": {
+      "checksum": "82cb7a2a68d577a3d91cdab2de9b18cc"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/translations/DESCRIPTION": {
+      "checksum": "471e016ac4982952e6c5cb87565ef9f5"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/doc.data": {
+      "checksum": "00ebcf3db985426450d7ed0b437bcdc2"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/doc.js.metadata": {
+      "checksum": "cca6164d142e611937cad532007e30db"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/help.data": {
+      "checksum": "63602c21decf8890e767afffdb8eb696"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/help.js.metadata": {
+      "checksum": "bb4b9608a0f27be3bdf8a97d98fbfbfb"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/html.data": {
+      "checksum": "60c98be4662ce37f09b5885bf29af18f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/html.js.metadata": {
+      "checksum": "cb8199e33acd4f1569733069ca6aed80"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/misc.data": {
+      "checksum": "dc1fdc8566529881bf55d3e88fac4b6f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/misc.js.metadata": {
+      "checksum": "612cba7ef6f134d6e2ee8dd823227f0d"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/tests.data": {
+      "checksum": "ba8774d826134ca1932de522e8a1c43f"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/library/utils/tests.js.metadata": {
+      "checksum": "220061b4b9b42a95c6ea270ddf0215b6"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/share.data": {
+      "checksum": "a27ce626aa94c90bf3e77f6a8505a453"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/share.js.metadata": {
+      "checksum": "e3905e713fae6f1fff2d34abe245d54e"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/tests.data": {
+      "checksum": "9398e119126f8fa3b2acee6c432eb36b"
+    },
+    "docs/shinylive/webr/vfs/usr/lib/R/tests.js.metadata": {
+      "checksum": "9ecb9f25f565a25d30f9aaace618852a"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSans-Bold.ttf": {
+      "checksum": "24d5e8ab973d38b3a7e30bd632bca199"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSans-BoldItalic.ttf": {
+      "checksum": "074e53d6c18a38856bde494e7383340e"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSans-Italic.ttf": {
+      "checksum": "faadc42c392f92b754b2a4322c5c4cb6"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSans-Regular.ttf": {
+      "checksum": "17b1a4cfa1a3397412f16eb1e271f44b"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSansMono-Bold.ttf": {
+      "checksum": "3fb27ce0b5f4b0dcb486f883b40dca82"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSansMono-Regular.ttf": {
+      "checksum": "b74a624c4a9a1cf70592ad154bb1e4f7"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSerif-Bold.ttf": {
+      "checksum": "eb8a8ba64d03bf76bc188d2e22ff9211"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSerif-BoldItalic.ttf": {
+      "checksum": "9337357b91c6b9134beef6448e1fbdd8"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSerif-Italic.ttf": {
+      "checksum": "858b3c0567bb168f142d8efd9601946e"
+    },
+    "docs/shinylive/webr/vfs/usr/share/fonts/NotoSerif-Regular.ttf": {
+      "checksum": "811988e53e8c4aba75a5d2ce60bb362b"
+    },
+    "docs/shinylive/webr/vfs/usr/share/gdal.data": {
+      "checksum": "a2957633e60da5fb68ca68aa79a21e59"
+    },
+    "docs/shinylive/webr/vfs/usr/share/gdal.js.metadata": {
+      "checksum": "9d9a2ce5132237b103402c1c8a523a20"
+    },
+    "docs/shinylive/webr/vfs/usr/share/proj.data": {
+      "checksum": "0a3cbdc7be8c1d3e451e02c0eb576584"
+    },
+    "docs/shinylive/webr/vfs/usr/share/proj.js.metadata": {
+      "checksum": "45886af888cc96465a046ae01862e36b"
+    },
+    "docs/shinylive/webr/vfs/usr/share/udunits.data": {
+      "checksum": "5c9adc002682bd8219115e47205abdc9"
+    },
+    "docs/shinylive/webr/vfs/usr/share/udunits.js.metadata": {
+      "checksum": "1a5c14ca2d82ff8d174b641261079e23"
+    },
+    "docs/shinylive/webr/vfs/var/cache/fontconfig/3830d5c3ddfd5cd38a049b759396e72e-le32d8.cache-7": {
+      "checksum": "7af75ba0f216cb019e8b8c82985649ca"
+    },
+    "docs/shinylive/webr/vfs/var/cache/fontconfig/CACHEDIR.TAG": {
+      "checksum": "edad2301cde055e29b0d30b8d2f4b724"
+    },
+    "docs/shinylive/webr/webr-serviceworker.js": {
+      "checksum": "eb11220c1ea84d1d787428461d147088"
+    },
+    "docs/shinylive/webr/webr-serviceworker.js.map": {
+      "checksum": "f4d5aea5a00479a9508f3a54b63ceb83"
+    },
+    "docs/shinylive/webr/webr-serviceworker.mjs": {
+      "checksum": "00dc4dda7ff2844e5a857acd97e1f385"
+    },
+    "docs/shinylive/webr/webr-serviceworker.mjs.map": {
+      "checksum": "f7b029b77c6864ec90de167a04f20e4e"
+    },
+    "docs/shinylive/webr/webr-worker.js": {
+      "checksum": "c12c27f8d067a79477e2ef7eda006d8b"
+    },
+    "docs/shinylive/webr/webr-worker.js.map": {
+      "checksum": "02883e99538010557a05e2e3df9dc3ca"
+    },
+    "docs/shinylive/webr/webr.cjs": {
+      "checksum": "aec35c8195775e12bd033c9d66037292"
+    },
+    "docs/shinylive/webr/webr.cjs.map": {
+      "checksum": "507fb1bcbc67b9cfedf8ab277f5cb29d"
+    },
+    "docs/shinylive/webr/webr.mjs": {
+      "checksum": "ba27da0d13aa5004ea5bddf3f0765f3c"
+    },
+    "docs/shinylive/webr/webr.mjs.map": {
+      "checksum": "91d5e149b37c7393ffed34ff5bcbf2e2"
+    },
+    "docs/shinylive/webr/webR/chan/channel-common.d.ts": {
+      "checksum": "fec049491a432f1ccbf3ce024bba3baa"
+    },
+    "docs/shinylive/webr/webR/chan/channel-postmessage.d.ts": {
+      "checksum": "eb527fb0f33c8fcc5722772045684957"
+    },
+    "docs/shinylive/webr/webR/chan/channel-service.d.ts": {
+      "checksum": "6e7e5f5796d610ea1bb783c1acfa388d"
+    },
+    "docs/shinylive/webr/webR/chan/channel-shared.d.ts": {
+      "checksum": "b8238297c56343a6f1703187c16db0b0"
+    },
+    "docs/shinylive/webr/webR/chan/channel.d.ts": {
+      "checksum": "5edf98282e3eaaf75a81e7ac9451d07e"
+    },
+    "docs/shinylive/webr/webR/chan/message.d.ts": {
+      "checksum": "7705b5d065fc7c9ec24c5906bcb3e1e9"
+    },
+    "docs/shinylive/webr/webR/chan/queue.d.ts": {
+      "checksum": "88820d2b2237896b22d15da0bb8246ea"
+    },
+    "docs/shinylive/webr/webR/chan/serviceworker.d.ts": {
+      "checksum": "6d929e5cd8ad392cfa10734d88c25d67"
+    },
+    "docs/shinylive/webr/webR/chan/task-common.d.ts": {
+      "checksum": "fd7246d4024268a546f1b93e2c67a519"
+    },
+    "docs/shinylive/webr/webR/chan/task-main.d.ts": {
+      "checksum": "f6f605da203f29469a5b4d38b2c0bcce"
+    },
+    "docs/shinylive/webr/webR/chan/task-worker.d.ts": {
+      "checksum": "cf6b12ffd3797cb9303bbd190351eb4b"
+    },
+    "docs/shinylive/webr/webR/compat.d.ts": {
+      "checksum": "33eda8bd4455ab1b10c7e580db558f45"
+    },
+    "docs/shinylive/webr/webR/config.d.ts": {
+      "checksum": "236fa02f8d4546e85a6ecc26cbc6569e"
+    },
+    "docs/shinylive/webr/webR/console.d.ts": {
+      "checksum": "591c23a125e11dcf3dd2e959cfdc06b9"
+    },
+    "docs/shinylive/webr/webR/emscripten.d.ts": {
+      "checksum": "dd6eed95be831dd299761a0a13f7c749"
+    },
+    "docs/shinylive/webr/webR/error.d.ts": {
+      "checksum": "f6ab6e58de6eb63a7d7b16aaa48be714"
+    },
+    "docs/shinylive/webr/webR/payload.d.ts": {
+      "checksum": "eb9cd4d5c9df6f2a1a9b20e70e06aa35"
+    },
+    "docs/shinylive/webr/webR/proxy.d.ts": {
+      "checksum": "57c4fcbdf5465a962806ec8f84f72f91"
+    },
+    "docs/shinylive/webr/webR/robj-main.d.ts": {
+      "checksum": "5546b01be7587fec7459a1867088ed91"
+    },
+    "docs/shinylive/webr/webR/robj-worker.d.ts": {
+      "checksum": "e9015df5d414c4dd13bccbeb2aab3870"
+    },
+    "docs/shinylive/webr/webR/robj.d.ts": {
+      "checksum": "f195cb2832080d69b7a46f096e44e80c"
+    },
+    "docs/shinylive/webr/webR/utils-r.d.ts": {
+      "checksum": "8dd57576c21644349c45e562ce9f1f4a"
+    },
+    "docs/shinylive/webr/webR/utils.d.ts": {
+      "checksum": "cc52657cc111c63269c29ee8af7cd99e"
+    },
+    "docs/shinylive/webr/webR/webr-chan.d.ts": {
+      "checksum": "d26e80e168e27769611e8cca40adf6a7"
+    },
+    "docs/shinylive/webr/webR/webr-main.d.ts": {
+      "checksum": "db1036d78d09e9d3a8cefae9ab071977"
+    },
+    "docs/shinylive/webr/webR/webr-worker.d.ts": {
+      "checksum": "e2ebd7ddedcadeeadbf819c35985c768"
+    },
+    "LNUDashaord/anc.R": {
+      "checksum": "5b974dfd587277bfddd81f1b981adf7f"
+    },
+    "LNUDashaord/app.R": {
+      "checksum": "902d6c49f7ffa01d8c28b49767456ba8"
     }
   },
   "users": null
